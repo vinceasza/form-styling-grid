@@ -1,0 +1,80 @@
+@import "bourbon/_bourbon.scss";
+@import 'main.scss';
+
+/////////////////////////////////SASS//////////////////////////////////
+
+//could use this as a general and then add color and positioning
+@mixin roundy($height, $width) {
+  border-radius: 50%;
+  background-color: #fff;
+  height: $height;
+  width: $width;
+}
+
+@mixin addpoo {
+  &:after {
+    content: "poo";
+  }
+}
+
+@mixin green_links{
+  a {
+    color: green;
+    &:hover {
+      color: blue;
+    }
+  }
+}
+
+//placeholder code in line is added to .bar
+%line {
+  width: 400px;
+  height: 30px;
+  background: #fff;
+}
+
+.bar {
+  @extend %line;
+}
+
+//color palette
+
+$alpha: pink;
+$beta: steelblue;
+
+@mixin color($color){
+  .#{$color} {
+    background-color: $color;
+    @if $color == red {
+      border: 1px solid blue;
+    }
+    @else {
+      border: 1px dotted green;
+    }
+
+    @extend %line;
+  }
+}
+
+@include color(red);
+@include color(blue);
+@include color(black);
+
+body {
+  background-color: $alpha;
+  color: $beta;
+  @include linear-gradient(to top,red,orange);
+
+}
+  .roundy {
+    @include roundy(20px,20px);
+  }
+  .roundy2 {
+    @include roundy(300px,300px);
+  }
+  .column-4 {
+    @include green_links;
+    width: 50%;
+    float: left;
+    @include addpoo;
+  }

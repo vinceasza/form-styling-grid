@@ -1,0 +1,55 @@
+@import 'main.scss';
+/////////////////////////////////GRID//////////////////////////////////
+
+.grid {
+  width: 100%;
+  float: left;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  div {
+    padding: 0 10px;
+    background-color: $alpha;
+    margin-bottom: 10px;
+  }
+  .column-4 {
+    float: left;
+    width: 100%;
+    @media screen and (min-width: 600px){
+      width: 49.75%;
+      margin-right: 0.5%;
+      &:nth-of-type(2n + 2){
+        margin-right: 0;
+        float: right;
+      }
+    }
+    @media screen and (min-width: 800px){
+      width: 33%;
+      &:nth-of-type(2n + 2){
+        margin-right: 0.5%;
+        float: inherit;
+      }
+      &:nth-of-type(3n + 3){
+        margin-right: 0;
+        float: right;
+      }
+    }
+    @media screen and (min-width: 1000px){
+      width: 24.625%;
+      &:nth-of-type(2n + 2){
+        margin-right: 0.5%;
+        float: inherit;
+      }
+      &:nth-of-type(3n + 3){
+        margin-right: 0.5%;
+        float: left;
+      }
+      &:nth-of-type(4n + 4){
+        margin-right: 0;
+        float: right;
+      }
+    }
+  }
+}

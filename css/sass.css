@@ -1,0 +1,61 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  color: #fff; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px; }
+
+.bar, .red, .blue, .black {
+  width: 400px;
+  height: 30px;
+  background: #fff; }
+
+.red {
+  background-color: red;
+  border: 1px solid blue; }
+
+.blue {
+  background-color: blue;
+  border: 1px dotted green; }
+
+.black {
+  background-color: black;
+  border: 1px dotted green; }
+
+body {
+  background-color: pink;
+  color: steelblue;
+  background-color: red;
+  background-image: -webkit-linear-gradient(bottom, red, orange);
+  background-image: linear-gradient(to top,red, orange); }
+
+.roundy {
+  border-radius: 50%;
+  background-color: #fff;
+  height: 20px;
+  width: 20px; }
+
+.roundy2 {
+  border-radius: 50%;
+  background-color: #fff;
+  height: 300px;
+  width: 300px; }
+
+.column-4 {
+  width: 50%;
+  float: left; }
+  .column-4 a {
+    color: green; }
+    .column-4 a:hover {
+      color: blue; }
+  .column-4:after {
+    content: "poo"; }
+
+/*# sourceMappingURL=sass.css.map */

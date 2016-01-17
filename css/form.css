@@ -1,0 +1,235 @@
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background-color: black;
+  color: #fff; }
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px; }
+
+.form {
+  width: 100%;
+  float: left;
+  border: 1px solid #eaeaea;
+  padding: 0 25px; }
+  .form h1 {
+    font-size: 40px;
+    color: white;
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 10px; }
+  .form fieldset {
+    border: none;
+    width: 100%;
+    display: block;
+    float: left;
+    padding: 20px 0; }
+    .form fieldset legend {
+      font-size: 20px;
+      color: steelblue;
+      padding: 5px 0; }
+    .form fieldset .form-group {
+      width: 100%;
+      float: left;
+      margin: 4px 0; }
+      .form fieldset .form-group label {
+        width: 30%;
+        display: block;
+        float: left; }
+      .form fieldset .form-group input,
+      .form fieldset .form-group textarea {
+        width: 70%;
+        display: block;
+        float: right;
+        color: #000;
+        padding: 5px;
+        border: 1px solid #eaeaea;
+        outline-color: steelblue; }
+      .form fieldset .form-group textarea {
+        height: 130px; }
+    .form fieldset .form-group.form-address label {
+      margin: 4px 0; }
+    .form fieldset .form-group.form-address .input-group {
+      width: 70%;
+      float: right; }
+      .form fieldset .form-group.form-address .input-group input {
+        margin: 0 0 8px 0;
+        width: 100%; }
+      .form fieldset .form-group.form-address .input-group input:nth-of-type(1n+3) {
+        width: 33%;
+        margin-right: 0.5%;
+        margin-bottom: 0;
+        float: left; }
+      .form fieldset .form-group.form-address .input-group input:last-child {
+        margin-right: 0; }
+    .form fieldset .form-group.checkbox-group label {
+      width: 50%;
+      margin: 8px 0; }
+    .form fieldset .form-group.checkbox-group input[type=checkbox] {
+      display: none; }
+    .form fieldset .form-group.checkbox-group label input[type=checkbox] + .checkbox {
+      display: inline-block;
+      margin-right: 10px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #fff;
+      border: 1px solid steelblue;
+      cursor: pointer;
+      position: relative;
+      left: 0px;
+      top: 4px; }
+    .form fieldset .form-group.checkbox-group label input[type=checkbox]:checked + .checkbox {
+      background-color: steelblue;
+      border: 1px solid #fff; }
+    .form fieldset .form-group.radio-group label {
+      width: 50%;
+      margin: 8px 0; }
+    .form fieldset .form-group.radio-group input[type=radio] {
+      display: none; }
+    .form fieldset .form-group.radio-group label input[type="radio"] + .radio {
+      height: 20px;
+      width: 20px;
+      display: inline-block;
+      margin-right: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid steelblue;
+      cursor: pointer;
+      position: relative;
+      left: 0px;
+      top: 4px; }
+    .form fieldset .form-group.radio-group label input[type=radio]:checked + .radio {
+      background-color: steelblue;
+      border: 1px solid #fff; }
+    .form fieldset .form-group.range-group p {
+      margin: 30px 0;
+      float: left; }
+    .form fieldset .form-group.range-group input[type=range] {
+      -webkit-appearance: none;
+      /* Hides the slider so that custom slider can be made */
+      width: 100%;
+      /* Specific width is required for Firefox. */
+      background-color: #000;
+      border: none; }
+    .form fieldset .form-group.range-group input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none; }
+    .form fieldset .form-group.range-group input[type=range]:focus {
+      outline: none; }
+    .form fieldset .form-group.range-group input[type=range]::-ms-track {
+      width: 100%;
+      cursor: pointer;
+      background: transparent;
+      /* Hides the slider so custom styles can be added */
+      border-color: transparent;
+      color: transparent; }
+    .form fieldset .form-group.range-group input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      border: 1px solid #000000;
+      height: 36px;
+      width: 16px;
+      border-radius: 3px;
+      background: steelblue;
+      cursor: pointer;
+      margin-top: -14px;
+      /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      /* Add cool effects to your sliders! */
+      /* Firefox */
+      /* IE */ }
+      .form fieldset .form-group.range-group input[type=range]::-webkit-slider-thumb::-moz-range-thumb {
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        border: 1px solid #000000;
+        height: 36px;
+        width: 16px;
+        border-radius: 3px;
+        background: steelblue;
+        cursor: pointer; }
+      .form fieldset .form-group.range-group input[type=range]::-webkit-slider-thumb::-ms-thumb {
+        box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+        border: 1px solid #000000;
+        height: 36px;
+        width: 16px;
+        border-radius: 3px;
+        background: steelblue;
+        cursor: pointer; }
+    .form fieldset .form-group.range-group input[type=range]::-webkit-slider-runnable-track {
+      width: 100%;
+      height: 8.4px;
+      cursor: pointer;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      background: #3071a9;
+      border-radius: 1.3px;
+      border: 0.2px solid #010101; }
+    .form fieldset .form-group.range-group input[type=range]:focus::-webkit-slider-runnable-track {
+      background: green; }
+    .form fieldset .form-group.range-group input[type=range]::-moz-range-track {
+      width: 100%;
+      height: 8.4px;
+      cursor: pointer;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+      background: #3071a9;
+      border-radius: 1.3px;
+      border: 0.2px solid #010101; }
+    .form fieldset .form-group.range-group input[type=range]::-ms-track {
+      width: 100%;
+      height: 8.4px;
+      cursor: pointer;
+      background: transparent;
+      border-color: transparent;
+      border-width: 1px 0;
+      color: transparent; }
+    .form fieldset .form-group.range-group input[type=range]::-ms-fill-lower {
+      background: #2a6495;
+      border: 0.2px solid #010101;
+      border-radius: 2.6px;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+    .form fieldset .form-group.range-group input[type=range]:focus::-ms-fill-lower {
+      background: none; }
+    .form fieldset .form-group.range-group input[type=range]::-ms-fill-upper {
+      background: transparent;
+      border: 0.2px solid #010101;
+      border-radius: 2.6px;
+      box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; }
+    .form fieldset .form-group.range-group input[type=range]:focus::-ms-fill-upper {
+      background: #367ebd; }
+    .form fieldset .form-group.switch-group {
+      border-radius: 45px;
+      width: initial; }
+      .form fieldset .form-group.switch-group label {
+        width: initial;
+        margin: 8px 3px;
+        cursor: pointer;
+        width: 60px; }
+      .form fieldset .form-group.switch-group input[type=radio] {
+        display: none; }
+      .form fieldset .form-group.switch-group input[type="radio"] + label {
+        padding: 10px 15px;
+        border: 1px solid #eaeaea;
+        border-radius: 45px 0 0 45px; }
+      .form fieldset .form-group.switch-group input[type="radio"]:nth-of-type(2) + label {
+        padding: 10px 15px;
+        border: 1px solid #eaeaea;
+        border-radius: 0 45px 45px 0; }
+      .form fieldset .form-group.switch-group input[type=radio]:checked + label {
+        background-color: steelblue;
+        border-radius: 45px 0 0 45px; }
+      .form fieldset .form-group.switch-group input[type=radio]:nth-of-type(2):checked + label {
+        background-color: steelblue;
+        border-radius: 0 45px 45px 0; }
+  .form input[type=submit] {
+    border: none;
+    width: 100%;
+    display: block;
+    float: left;
+    background-color: steelblue;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 30px 0; }
+
+/*# sourceMappingURL=form.css.map */

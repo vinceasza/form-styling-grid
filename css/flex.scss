@@ -1,0 +1,37 @@
+@import 'main.scss';
+
+/////////////////////////////////FLEXBOX EXAMPLE//////////////////////////////////
+.flex {
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row; // | row-reverse | column | column-reverse;
+  flex-wrap: wrap; //nowrap | wrap-reverse;
+  //flex-flow: //flex-direction  //flex-wrap;
+  justify-content: space-between; //flex-start | flex-end | center | space-between | space-around;
+  align-items: flex-start; //vertical position// flex-start | flex-end | center | baseline | stretch; stretch vertically
+  align-content: stretch;  //flex-start | flex-end | center | space-between | space-around | stretch;
+  div {
+    width: 25%;
+    margin: 10px;
+    padding: 0 10px;
+    background-color: red;
+    flex: 1 auto;
+    &:last-child{
+
+    }
+  }
+}
+
+.vertical-center {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  border:1px solid red;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  div {
+    border: 1px solid steelblue;
+    padding: 90px;
+  }
+}
